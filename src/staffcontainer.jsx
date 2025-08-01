@@ -1,8 +1,8 @@
 import { faCircleXmark, faEye, faPencilSquare, faTrash } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import StaffInfo from "./StaffInfo"
-import EditStaff from "./editstaff"
-import DeleteStaff from "./deletestaff"
+import StaffInfo from "./staffinfo.jsx"
+import EditStaff from "./editstaff.jsx"
+import DeleteStaff from "./deletestaff.jsx"
 
 function StaffContainer(props){
     const modalBase = "fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 z-50 bg-white border-1 border-gray-300 shadow-lg rounded transition-all duration-300";
