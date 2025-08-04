@@ -64,12 +64,12 @@ function Login(){
                     </div>
                     <button type="submit" className='bg-black rounded-md text-white text-xl w-full py-2 mb-2 hover:cursor-pointer hover:bg-gray-800'>Sign in</button>
                     <div className='flex justify-between mt-4'>
-                        <p>Administrator email: admin@gmail.com</p>
-                        <p>Password: admin123</p>
+                        <p>Administrator email: husnia43@gmail.com</p>
+                        <p>Password: Husnia@4231</p>
                     </div>
                     <div className='flex justify-between mt-4'>
-                        <p>Librarian email: librarian@gmail.com</p>
-                        <p>Password: librarian123</p>
+                        <p>Librarian email: aymenanwar45@gmail.com</p>
+                        <p>Password: Aymen@4231</p>
                     </div>
                 </form>
             </main>
