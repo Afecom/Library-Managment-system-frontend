@@ -16,7 +16,8 @@ function HeaderAsideLayout() {
   const token = localStorage.getItem('token');
   const navigate = useNavigate();
   const role = jwtDecode(token).role;
-  const firstLetter = role[0].toUpperCase();
+  const userLetter = jwtDecode(token).username;
+  const firstLetter = userLetter[0].toUpperCase();
   const [isSideBarOpen, setIsSideBarOpen] = useState(false);
   const [isProfileMenuOpen, setIsProfileMenuOpen] = useState(false);
   const sidebarRef = useRef();
