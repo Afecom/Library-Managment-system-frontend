@@ -16,15 +16,14 @@ function HeaderAsideLayout() {
   const token = localStorage.getItem('token');
   const navigate = useNavigate();
   const role = jwtDecode(token).role;
-  const userLetter = jwtDecode(token).username;
-  const firstLetter = userLetter[0].toUpperCase();
+  const userName = jwtDecode(token).username;
+  const firstLetter = userName[0].toUpperCase();
   const [isSideBarOpen, setIsSideBarOpen] = useState(false);
   const [isProfileMenuOpen, setIsProfileMenuOpen] = useState(false);
   const sidebarRef = useRef();
   const buttonRef = useRef();
   const menuRef = useRef();
   const profileRef = useRef();
-  const userName = useContext(usersContext)?.data?.username
 
   function logoutHandler() {
     localStorage.removeItem('token');
@@ -109,7 +108,7 @@ function HeaderAsideLayout() {
           {isProfileMenuOpen && (
             <menu ref={menuRef} className="shadow-gray-200 bg-white w-52 rounded-md absolute right-4 top-16 transition-all duration-200 origin-top scale-100 opacity-100 z-80">
               <div className="px-6 py-3">
-                <h1 className="text-2xl font-bold">{role}</h1>
+                <h1 className="text-2xl font-bold">{userName}</h1>
                 <p className="text-xl">{role}</p>
               </div>
               <hr className="border-1 border-gray-200" />
